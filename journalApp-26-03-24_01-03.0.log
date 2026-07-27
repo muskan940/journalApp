@@ -1,0 +1,69 @@
+01:03:36.320 [cluster-ClusterId{value='69c18d0d0d04f7b36a2fda5a', description='Cluster0'}-ac-qe1zawo-shard-00-01.dz4chyy.mongodb.net:27017] INFO  org.mongodb.driver.cluster -Exception in monitor thread while connecting to server ac-qe1zawo-shard-00-01.dz4chyy.mongodb.net:27017
+com.mongodb.MongoSocketReadException: Exception receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:809)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:857)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:517)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:469)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitor.lookupServerDescription(DefaultServerMonitor.java:249)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitor.run(DefaultServerMonitor.java:176)
+Caused by: java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:328)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:484)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1465)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1069)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:182)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:824)
+	... 4 common frames omitted
+01:03:36.320 [cluster-ClusterId{value='69c18d0d0d04f7b36a2fda5a', description='Cluster0'}-ac-qe1zawo-shard-00-00.dz4chyy.mongodb.net:27017] INFO  org.mongodb.driver.cluster -Exception in monitor thread while connecting to server ac-qe1zawo-shard-00-00.dz4chyy.mongodb.net:27017
+com.mongodb.MongoSocketReadException: Exception receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:809)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:857)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:517)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:469)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitor.lookupServerDescription(DefaultServerMonitor.java:249)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitor.run(DefaultServerMonitor.java:176)
+Caused by: java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:328)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:484)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1465)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1069)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:182)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:824)
+	... 4 common frames omitted
+01:03:36.724 [cluster-ClusterId{value='69c18d0d0d04f7b36a2fda5a', description='Cluster0'}-ac-qe1zawo-shard-00-02.dz4chyy.mongodb.net:27017] INFO  org.mongodb.driver.cluster -Exception in monitor thread while connecting to server ac-qe1zawo-shard-00-02.dz4chyy.mongodb.net:27017
+com.mongodb.MongoSocketReadException: Exception receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:809)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:857)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:517)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:469)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitor.lookupServerDescription(DefaultServerMonitor.java:249)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitor.run(DefaultServerMonitor.java:176)
+Caused by: java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:328)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:484)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1465)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1069)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:182)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:824)
+	... 4 common frames omitted
+01:03:48.322 [cluster-ClusterId{value='69c18d0d0d04f7b36a2fda5a', description='Cluster0'}-ac-qe1zawo-shard-00-00.dz4chyy.mongodb.net:27017] INFO  org.mongodb.driver.cluster -Monitor thread successfully connected to server with description ServerDescription{address=ac-qe1zawo-shard-00-00.dz4chyy.mongodb.net:27017, type=REPLICA_SET_SECONDARY, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=8276151500, minRoundTripTimeNanos=0, setName='atlas-6bv22o-shard-0', canonicalAddress=ac-qe1zawo-shard-00-00.dz4chyy.mongodb.net:27017, hosts=[ac-qe1zawo-shard-00-01.dz4chyy.mongodb.net:27017, ac-qe1zawo-shard-00-00.dz4chyy.mongodb.net:27017, ac-qe1zawo-shard-00-02.dz4chyy.mongodb.net:27017], passives=[], arbiters=[], primary='ac-qe1zawo-shard-00-02.dz4chyy.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az1'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=312, topologyVersion=TopologyVersion{processId=69b2e533eabf32b5ec312b00, counter=4}, lastWriteDate=Tue Mar 24 01:03:49 IST 2026, lastUpdateTimeNanos=962100452797700}
+01:03:48.324 [cluster-ClusterId{value='69c18d0d0d04f7b36a2fda5a', description='Cluster0'}-ac-qe1zawo-shard-00-02.dz4chyy.mongodb.net:27017] INFO  org.mongodb.driver.cluster -Monitor thread successfully connected to server with description ServerDescription{address=ac-qe1zawo-shard-00-02.dz4chyy.mongodb.net:27017, type=REPLICA_SET_PRIMARY, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=8277207800, minRoundTripTimeNanos=0, setName='atlas-6bv22o-shard-0', canonicalAddress=ac-qe1zawo-shard-00-02.dz4chyy.mongodb.net:27017, hosts=[ac-qe1zawo-shard-00-01.dz4chyy.mongodb.net:27017, ac-qe1zawo-shard-00-00.dz4chyy.mongodb.net:27017, ac-qe1zawo-shard-00-02.dz4chyy.mongodb.net:27017], passives=[], arbiters=[], primary='ac-qe1zawo-shard-00-02.dz4chyy.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az2'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff00000000000001a4, setVersion=312, topologyVersion=TopologyVersion{processId=69b2e7ecb63c9005e2b04842, counter=6}, lastWriteDate=Tue Mar 24 01:03:49 IST 2026, lastUpdateTimeNanos=962100458289400}
+01:03:48.328 [cluster-ClusterId{value='69c18d0d0d04f7b36a2fda5a', description='Cluster0'}-ac-qe1zawo-shard-00-01.dz4chyy.mongodb.net:27017] INFO  org.mongodb.driver.cluster -Monitor thread successfully connected to server with description ServerDescription{address=ac-qe1zawo-shard-00-01.dz4chyy.mongodb.net:27017, type=REPLICA_SET_SECONDARY, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=8291300600, minRoundTripTimeNanos=0, setName='atlas-6bv22o-shard-0', canonicalAddress=ac-qe1zawo-shard-00-01.dz4chyy.mongodb.net:27017, hosts=[ac-qe1zawo-shard-00-01.dz4chyy.mongodb.net:27017, ac-qe1zawo-shard-00-00.dz4chyy.mongodb.net:27017, ac-qe1zawo-shard-00-02.dz4chyy.mongodb.net:27017], passives=[], arbiters=[], primary='ac-qe1zawo-shard-00-02.dz4chyy.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az3'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=312, topologyVersion=TopologyVersion{processId=69b2eab45018653940111118, counter=3}, lastWriteDate=Tue Mar 24 01:03:49 IST 2026, lastUpdateTimeNanos=962100467946500}
+01:03:48.338 [cluster-ClusterId{value='69c18d0d0d04f7b36a2fda5a', description='Cluster0'}-ac-qe1zawo-shard-00-02.dz4chyy.mongodb.net:27017] INFO  org.mongodb.driver.cluster -Discovered replica set primary ac-qe1zawo-shard-00-02.dz4chyy.mongodb.net:27017 with max election id 7fffffff00000000000001a4 and max set version 312
+01:03:50.037 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown -Commencing graceful shutdown. Waiting for active requests to complete
+01:03:53.029 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown -Graceful shutdown complete

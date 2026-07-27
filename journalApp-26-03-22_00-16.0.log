@@ -1,0 +1,3 @@
+00:16:01.064 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[.[localhost].[/journal] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+00:16:01.075 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+00:16:01.082 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet -Completed initialization in 5 ms
