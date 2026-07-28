@@ -34,3 +34,5 @@ build/
 ### Sensitive config (passwords) ###
 application.yml
 application-dev.yml
+application-prod.yml
+*.log 
