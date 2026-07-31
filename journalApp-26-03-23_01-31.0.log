@@ -1,6 +1,0 @@
-01:31:07.978 [lettuce-eventExecutorLoop-1-1] INFO  i.l.core.protocol.ConnectionWatchdog -Reconnecting, last destination was localhost/127.0.0.1:6379
-01:31:08.356 [lettuce-nioEventLoop-4-2] WARN  i.l.core.protocol.ConnectionWatchdog -Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: getsockopt: localhost/127.0.0.1:6379
-01:31:13.264 [lettuce-eventExecutorLoop-1-4] INFO  i.l.core.protocol.ConnectionWatchdog -Reconnecting, last destination was localhost/<unresolved>:6379
-01:31:13.268 [lettuce-nioEventLoop-4-5] WARN  i.l.core.protocol.ConnectionWatchdog -Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: getsockopt: localhost/127.0.0.1:6379
-01:31:15.689 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown -Commencing graceful shutdown. Waiting for active requests to complete
-01:31:15.918 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown -Graceful shutdown complete
