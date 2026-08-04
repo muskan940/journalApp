@@ -1,0 +1,24 @@
+weather:
+  api:
+    key: 4ff617b9068295a7c846582d6f2a5acb
+spring:
+  data:
+    redis:
+      host: redis-16376.crce182.ap-south-1-1.ec2.cloud.redislabs.com
+      port: 16376
+      password: njbfuhx
+    mongodb:
+      uri: ${MONGODB_URI}
+      database: journaldb
+      auto-index-creation: true
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ${MAIL_USERNAME}
+    password: ${MAIL_PASSWORD}
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true

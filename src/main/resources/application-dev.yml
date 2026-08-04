@@ -1,0 +1,28 @@
+weather:
+  api:
+    key: 4ff617b9068295a7c846582d6f2a5acb
+spring:
+  redis:
+    host: localhost
+    port: 6379
+  data:
+    mongodb:
+      uri: mongodb+srv://guptamuskan_db_user:FDAvfEi20ZdYNR50@cluster0.dz4chyy.mongodb.net/?appName=Cluster0
+      database: journaldb
+      auto-index-creation: true
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: guptamuskann09@gmail.com
+    password: ziue heez ttzd scua
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+server:
+  port: 8080
+  servlet:
+    context-path: /journal
