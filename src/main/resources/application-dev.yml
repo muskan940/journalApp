@@ -1,6 +1,6 @@
 weather:
   api:
-    key: 4ff617b9068295a7c846582d6f2a5acb
+    key: ${API_KEY}
 spring:
   redis:
     host: localhost
@@ -25,4 +25,4 @@ spring:
 server:
   port: ${PORT:8080}
   servlet:
-    context-path: /journal
+    context-path: ${SERVER_SERVLET_CONTEXT_PATH:/}
