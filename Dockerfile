@@ -1,11 +1,3 @@
-# ---- Frontend build stage ----
-FROM node:20-alpine AS frontend-build
-WORKDIR /frontend
-COPY frontend/package*.json ./
-RUN npm install
-COPY frontend/ ./
-RUN npm run build
-
 # ---- Backend build stage ----
 FROM maven:3.9-eclipse-temurin-17 AS build
 WORKDIR /app
@@ -14,9 +6,6 @@ COPY .mvn .mvn
 COPY mvnw .
 RUN chmod +x mvnw && ./mvnw dependency:go-offline -B
 COPY src ./src
-
-# React (Vite) build output ko Spring Boot static folder me daalo
-COPY --from=frontend-build /frontend/dist ./src/main/resources/static
 
 RUN ./mvnw clean package -Dmaven.test.skip=true
 

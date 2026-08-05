@@ -41,7 +41,6 @@ public class SpringSecurity {
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/public/**").permitAll()
                         .requestMatchers(HttpMethod.POST, "/user").permitAll()
-                        .requestMatchers("/", "/index.html", "/static/**", "/assets/**", "/*.ico", "/*.png", "/*.svg").permitAll()                        .requestMatchers("/journal/**").authenticated() // ✅ sirf authenticated chahiye
                         .requestMatchers("/admin/**").hasRole("ADMIN")
                         .anyRequest().authenticated()
 
